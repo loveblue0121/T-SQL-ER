@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-09T05:21:34.850Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" etag="6ZNIAuSLrvh7DM_flAqo" version="17.4.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-09T08:01:23.200Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" etag="Xi-88zHwPMg9jCvJ7SJw" version="17.4.1" type="github">
   <diagram name="Page-1" id="9f46799a-70d6-7492-0946-bef42562c5a5">
     <mxGraphModel dx="1599" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -74,7 +74,7 @@
           <mxGeometry y="352" width="220" height="26" as="geometry" />
         </mxCell>
         <mxCell id="78961159f06e98e8-95" value="給假紀錄" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=none;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
-          <mxGeometry x="20" y="240" width="200" height="222" as="geometry" />
+          <mxGeometry x="20" y="240" width="200" height="248" as="geometry" />
         </mxCell>
         <mxCell id="78961159f06e98e8-96" value="(PK)給假紀錄編號: varchar(10): NotNull" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=1" parent="78961159f06e98e8-95" vertex="1">
           <mxGeometry y="26" width="200" height="34" as="geometry" />
@@ -85,17 +85,20 @@
         <mxCell id="tegx9vyHkFYL5SYYUZ0T-9" value="(FK)假別代號: varchar(3) NotNull" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=1;fontColor=#FF4F0F;" vertex="1" parent="78961159f06e98e8-95">
           <mxGeometry y="86" width="200" height="32" as="geometry" />
         </mxCell>
-        <mxCell id="78961159f06e98e8-97" value="每年應休時數: int" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="78961159f06e98e8-95" vertex="1">
+        <mxCell id="tegx9vyHkFYL5SYYUZ0T-14" value="給假時數: int NotNull" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="78961159f06e98e8-95">
           <mxGeometry y="118" width="200" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="78961159f06e98e8-98" value="每季平均建議休假日數: int" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="78961159f06e98e8-95" vertex="1">
+        <mxCell id="78961159f06e98e8-97" value="每年應休時數: int" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="78961159f06e98e8-95" vertex="1">
           <mxGeometry y="144" width="200" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="78961159f06e98e8-102" value="應休時數: int" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="78961159f06e98e8-95" vertex="1">
+        <mxCell id="78961159f06e98e8-98" value="每季平均建議休假日數: int" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="78961159f06e98e8-95" vertex="1">
           <mxGeometry y="170" width="200" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="tegx9vyHkFYL5SYYUZ0T-8" value="未休時數: int" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="78961159f06e98e8-95">
+        <mxCell id="78961159f06e98e8-102" value="應休時數: int" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="78961159f06e98e8-95" vertex="1">
           <mxGeometry y="196" width="200" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="tegx9vyHkFYL5SYYUZ0T-8" value="未休時數: int" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="78961159f06e98e8-95">
+          <mxGeometry y="222" width="200" height="26" as="geometry" />
         </mxCell>
         <mxCell id="78961159f06e98e8-108" value="假別" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=none;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
           <mxGeometry x="465" y="330" width="200" height="80" as="geometry" />
